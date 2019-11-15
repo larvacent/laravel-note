@@ -1,0 +1,34 @@
+{
+  "name": "larva/laravel-note",
+  "description": "This is a notebook.",
+  "keywords": [ "laravel", "notebook", "larva" ],
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "ext-bcmath": "*",
+    "ext-json": "*",
+    "illuminate/bus": "^5.7 || ^6.0",
+    "illuminate/events": "^5.7 || ^6.0",
+    "illuminate/http": "^5.7 || ^6.0",
+    "illuminate/queue": "^5.7 || ^6.0",
+    "illuminate/database": "^5.7 || ^6.0",
+    "illuminate/support": "^5.7 || ^6.0",
+    "larva/supports": "^1.2.13"
+  },
+  "autoload": {
+    "psr-4": {
+      "Larva\\Note\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Larva\\Note\\NoteServiceProvider"
+      ]
+    }
+  },
+  "prefer-stable": true
+}
